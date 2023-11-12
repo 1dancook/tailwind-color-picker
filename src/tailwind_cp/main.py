@@ -178,7 +178,7 @@ class TailWindPicker(App):
                 yield Static(id="static-text")
 
     def on_mount(self):
-        self.title = "Tailwind Color Pickerator"
+        self.title = "Tailwind Color Picker"
 
     def on_data_table_cell_highlighted(self, event):
         """
