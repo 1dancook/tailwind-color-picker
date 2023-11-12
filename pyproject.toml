@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tailwind-color-picker"
+version = "0.1.0"
+description = ""
+authors = ["Dan Cook <cook.r.dan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tailwind_cp", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.6.0"
+textual = "^0.41.0"
+pyperclip = "^1.8.2"
+
+[tool.poetry.scripts]
+twcp = "tailwind_cp.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
