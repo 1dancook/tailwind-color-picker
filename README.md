@@ -36,3 +36,5 @@ Selecting a color with the mouse will copy it, if you mouse.
 ### Other Information
 
 This app was built using [Textual](https://textual.textualize.io/).
+
+This currently yanks only the hex code. It's not really meant to generate the css class names that you would use if developing with Tailwind. But it could be a helpful preview of the default palette.
