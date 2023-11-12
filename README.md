@@ -13,12 +13,13 @@ Colors are from the [Tailwind Documentation](https://tailwindcss.com/docs/custom
 
 ### Installation:
 
-1. Clone this repository.
-2. Run `pip install .`
+```
+pipx install tailwind-color-picker
+```
 
 ### Usage:
 
-Run with the command `twcp`.
+Run with `twcp`.
 
 Bindings, etc:
 
