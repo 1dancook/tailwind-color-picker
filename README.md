@@ -32,3 +32,7 @@ q / Ctrl+c - quit
 
 Selecting a color with the mouse will copy it, if you mouse.
 ```
+
+### Other Information
+
+This app was built using [Textual](https://textual.textualize.io/).
