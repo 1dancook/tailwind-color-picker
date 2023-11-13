@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "tailwind_cp", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 rich = "^13.6.0"
 textual = "^0.41.0"
 pyperclip = "^1.8.2"
