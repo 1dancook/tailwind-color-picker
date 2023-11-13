@@ -3,6 +3,7 @@ name = "tailwind-color-picker"
 version = "0.1.0"
 description = "TUI Application for browsing and copying Tailwind colors to the clipboard."
 authors = ["Dan Cook <cook.r.dan@gmail.com>"]
+repository = "https://github.com/1dancook/tailwind-color-picker"
 readme = "README.md"
 packages = [{include = "tailwind_cp", from = "src"}]
 
