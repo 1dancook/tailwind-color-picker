@@ -9,6 +9,7 @@ from pyperclip import copy
 from textual.app import App
 from textual.widgets import DataTable, Static, Header
 from textual.containers import Container
+from textual.geometry import Size
 from rich.text import Text
 
 
@@ -129,23 +130,30 @@ class TailWindPicker(App):
         background: #1e293b;
         }
 
-    #grid {
-        layout: grid;
-        grid-size: 1 2;
-        grid-gutter: 0;
-        grid-rows: 25 1fr;
+    #top-container {
         margin: 1 0;
+        align: center top;
+        min-height: 6;
+        max-height: 25;
         }
 
-    .grid-cell {
+    #bottom-container {
+        margin: 1 0;
         align: center top;
+        height: 9;
         }
 
     Palette {
         background: #ffffff; 
         padding: 1; 
-        width: 66;
-        height: 25;
+        width: 68;
+        scrollbar-background: #e2e8f0;
+        scrollbar-background-active: #e2e8f0;
+        scrollbar-background-hover: #e2e8f0;
+        scrollbar-color: #cbd5e1;
+        scrollbar-color-active: #cbd5e1;
+        scrollbar-color-hover: #94a3b8;
+        scrollbar-gutter: stable;
         }
 
     .datatable--cursor {
@@ -164,18 +172,17 @@ class TailWindPicker(App):
         background: #ffffff; 
         text-align: center; 
         border: wide black;
-        width: 66;
+        width: 68;
         }
 
     """
 
     def compose(self):
         yield Header()
-        with Container(id="grid"):
-            with Container(classes="grid-cell"):
-                yield Palette()
-            with Container(classes="grid-cell"):
-                yield Static(id="static-text")
+        with Container(id="top-container"):
+            yield Palette()
+        with Container(id="bottom-container"):
+            yield Static(id="static-text")
 
     def on_mount(self):
         self.title = "Tailwind Color Picker"
