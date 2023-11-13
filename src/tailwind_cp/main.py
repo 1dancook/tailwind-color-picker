@@ -128,25 +128,32 @@ class TailWindPicker(App):
     CSS = """
     Screen {
         background: #1e293b;
+        scrollbar-background: #334155;
+        scrollbar-background-active: #334155;
+        scrollbar-background-hover: #334155;
+        scrollbar-color: #475569;
+        scrollbar-color-active: #475569;
+        scrollbar-color-hover: #64748b;
         }
 
     #top-container {
         margin: 1 0;
         align: center top;
-        min-height: 6;
         max-height: 25;
         }
 
     #bottom-container {
         margin: 1 0;
         align: center top;
-        height: 9;
+        height: 7;
         }
 
     Palette {
         background: #ffffff; 
         padding: 1; 
         width: 68;
+        height: 100%;
+        max-height: 23;
         scrollbar-background: #e2e8f0;
         scrollbar-background-active: #e2e8f0;
         scrollbar-background-hover: #e2e8f0;
